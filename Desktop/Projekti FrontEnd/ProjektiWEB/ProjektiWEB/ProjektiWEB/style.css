@@ -1,0 +1,179 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+    flex-wrap: wrap;
+}
+.headeri{
+    display: flex;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: larger;
+    color: rgba(0, 174, 255, 0.452);
+    font-weight: bold;
+    align-items: center;
+}
+
+.headeri img{
+    width: 100px;
+    height: auto;
+}
+
+ul{
+    width: 30%;
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    font-family:sans-serif;
+}
+
+
+ul li:hover {
+    font-weight: bold;
+    cursor: pointer;
+    border-bottom: 3px solid indianred;
+}
+
+li a{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: larger;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.home{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.tekst {
+    text-align: center;
+    justify-content: flex-start;
+    flex-direction: column;
+   margin-left: 225px;
+   margin-bottom: 150px;
+}
+
+.tekst h1{
+    margin-top: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.tekst p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.foto {
+    flex: 1;
+    order: 2; 
+    text-align: right;
+}
+
+.space {
+    height: 50px;
+}
+
+.maincontainer2{
+display: flex;
+width: 100%;
+}
+
+
+.aboutus{
+    width: 50%;
+    height: 650px;
+    background-image: url("banner3.jpg");
+    background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.fototekst{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: whitesmoke;
+    padding: 20px;
+}
+
+.fototekst h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 60px;
+}
+
+.tekstd {
+    width: 50%;
+    padding: 20px;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.tekstd p{
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 250px;
+    font-size: large;
+}
+
+.space2{
+    height: 80px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px; /* Distanca e lartësisë midis divit paresor dhe divit të produkteve */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+#products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+
+.produktet {
+    width: 200px; 
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+.produktet .img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+
+.name_tags p:first-child {
+    margin: 5px 0;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.name_tags p:last-child {
+    font-weight: normal;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 13px;
+}
