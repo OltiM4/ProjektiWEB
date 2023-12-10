@@ -6,15 +6,6 @@
     <title>OMEK</title>
     <link rel="icon" href="logoOmek.png" type="images/png">
     <link rel="stylesheet" href="style.css">
-    <script>
-         window.onload = function() {
-            if (window.performance) {
-                if (performance.navigation.type == 1) {
-                    window.scrollTo(0, 0);
-                }
-            }
-        }
-    </script>
 
 </head>
 <body>
@@ -206,33 +197,12 @@
 
         </div>
     </main>
-        <script>
-            function gotoHome() {
-                var homeSection = document.getElementById("home");
-                if (homeSection) {
-                    homeSection.scrollIntoView({ behavior: "smooth" });
-                }
-           }
 
-           function gotoAboutUs() {
-            var aboutusSection = document.getElementById("aboutus");
-            if(aboutusSection) {
-                aboutusSection.scrollIntoView({ behavior: "smooth"});
-            }
-           }
+    <div class="space3"></div>
 
-           function gotoProducts() {
-            var productsSection = document.getElementById("products");
-            if(productsSection) {
-                productsSection.scrollIntoView({behavior:"smooth"});
-            }
-           }
-
-
-
-        </script>
+     
         <footer class="footer">
-            <div class="container">
+            <div class="contactus" id="contactus">
                 <div class="row">
                     <div class="footer-col">
                         <h4>company</h4>
@@ -263,9 +233,9 @@
                         </ul>
                     </div>
                     <div class="footer-col">
-                        <h4>follow us</h4>
+                        <h4>Follow us</h4>
                         <div class="social-links">
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-facebook-f"></i></ima>
                             <a href="#"><i class="fab fa-twitter"></i></a>
                             <a href="#"><i class="fab fa-instagram"></i></a>
                             <a href="#"><i class="fab fa-linkedin-in"></i></a>
@@ -274,5 +244,40 @@
                 </div>
             </div>
        </footer>
-     
+     </body>
+     </html>
+
+       <script>
+        function gotoHome() {
+            var homeSection = document.getElementById("home");
+            if (homeSection) {
+                homeSection.scrollIntoView({ behavior: "smooth" });
+            }
+       }
+
+       function gotoAboutUs() {
+        var aboutusSection = document.getElementById("aboutus");
+        if(aboutusSection) {
+            aboutusSection.scrollIntoView({ behavior: "smooth"});
+        }
+       }
+
+       function gotoProducts() {
+        var productsSection = document.getElementById("products");
+        if(productsSection) {
+            productsSection.scrollIntoView({behavior:"smooth"});
+        }
+       }
+
+       function gotoContactUs() {
+        var contactSection = document.getElementById("contactus");
+        if(contactSection) {
+            contactSection.scrollIntoView({behavior:"smooth"});
+        }
+       }
+
+
+    </script>
+      
+
       

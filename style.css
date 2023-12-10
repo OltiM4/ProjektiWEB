@@ -11,7 +11,10 @@ header{
     color: rgba(0, 174, 255, 0.452);
     font-weight: bold;
     align-items: center;
+    width:275px;
 }
+
+
 
 .headeri img{
     width: 275px;
@@ -177,6 +180,11 @@ width: 100%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 13px;
 } 
+
+.space3{
+height: 150px;
+}
+
 body {
     margin: 0;
     padding: 0;
