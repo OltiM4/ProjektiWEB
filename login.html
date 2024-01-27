@@ -88,6 +88,8 @@
             <input type="password" id="password" name="password">
 
             <button type="submit">Login</button>
+
+            <p>Don't have an account? <a href="signup.html">Sign up here</a></p>
         </form>
 
      
@@ -101,7 +103,7 @@
             var password = document.getElementById("password").value;
 
             if (username === "" || password === "") {
-                displayErrorMessage("Please enter both username and password.");
+                displayErrorMessage("Ju lutem shenoni te dyja username-in dhe passwordin.");
                 return false;
             }
 
