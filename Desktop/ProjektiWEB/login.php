@@ -1,3 +1,29 @@
+<?php
+session_start();
+
+if(isset($_SESSION['username'])) {
+    header("Location: home.php");
+    exit();
+}
+
+if(isset($_POST['login'])) {
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+
+    if($username == 'olti' && $password == 'olti123') {
+        $_SESSION['username'] = $username;
+        $_SESSION['login_time'] = time();
+
+        header("Location: home.php");
+        exit();
+    } else {
+        $error = "Te dhenat nuk jane te sakta";
+    }
+}
+?>
+
+
+
 
 <!DOCTYPE html>
 <html lang="en">

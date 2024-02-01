@@ -1,3 +1,19 @@
+
+<?php
+session_start();
+
+if(!isset($_SESSION['username'])) {
+    header("Location: login.php");
+    exit();
+}
+
+$username = $_SESSION['username'];
+$login_time = $_SESSION['login_time'];
+
+$is_admin = true;
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
