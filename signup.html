@@ -115,16 +115,15 @@
             var confirmPassword = document.getElementById("confirmPassword").value;
 
             if (firstName === "" || lastName === "" || email === "" || newUsername === "" || newPassword === "" || confirmPassword === "") {
-                displaySignupErrorMessage("Please fill in all fields.");
+                displaySignupErrorMessage("Ju lutemi plotësoni të gjitha fushat.");
                 return false;
             }
 
             if (newPassword !== confirmPassword) {
-                displaySignupErrorMessage("Passwords do not match.");
+                displaySignupErrorMessage("Password-at nuk pershtaten");
                 return false;
             }
 
-            // Additional validation logic for sign-up can be added here
 
             hideSignupErrorMessage();
             return true;
