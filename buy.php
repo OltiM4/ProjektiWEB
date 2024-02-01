@@ -17,14 +17,14 @@
   <!-- End Header -->
 
 <div class="heading" style="background:url(../img/header-bg-3.png) no-repeat">
-   <h1>book now</h1>
+   <h1>BUY NOW</h1>
 </div>
 
 <!-- booking section starts  -->
 
 <section class="form">
 
-   <h1 class="heading-title">book your trip!</h1>
+   <h1 class="heading-title">BEST PRICES !</h1>
    <?php
             require_once '../bookingsMapper.php';
             require_once '../bookingsconfig/bookings.php';
