@@ -64,7 +64,7 @@ li a{
     font-family: 'Karla', sans-serif;
     font-size: 60px;
     font-weight: lighter;
-    color: #000; /* Set color to black */
+    color: #000; 
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
@@ -298,17 +298,21 @@ body{
 
 h1{
     margin-top: 50px;
-    margin-left: 510px;
+    margin-left: 100px;
     font-size: 60px;
     font-family: 'Karla', sans-serif;
     font-weight: lighter;
 }
+.wrapper {
+    display: flex;
+    align-items: center; 
+}
 
 .slider-frame{
     overflow: hidden;
-    height: 800px;
+    height: 600px;
     width: 1200px;
-    margin-left: 360px;
+    margin-left: 170px;
     margin-top: 10px;
 }
 
@@ -364,3 +368,23 @@ h1{
     float: left;
 }
 
+.buy-button {
+    margin-left: 170px;
+    margin-top: 70px;
+    font-size: xx-large;
+    font-style: initial;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000000; 
+    color: #fefefe; 
+    text-decoration: none; 
+    border-radius: 5px; 
+    transition: background-color 0.3s ease; 
+}
+.buy-button a {
+    color: white; 
+    text-decoration: none; 
+}
+.buy-button:hover {
+    background-color: #000000; /
+}
