@@ -11,17 +11,47 @@
 <header>
         <div class="headeri">
             <a href="index.html">
-            <img src="logoOmek.png" alt="file:///C:/desktop/ProjektiWEB/index.html#">
+            <img src="logoOmek.png" alt="">
         </a>
         </div>
         <ul>
+        <?php 
+            session_start();
+            if(isset($_SESSION['role']) && $_SESSION['role']== 1 ){
+              ?>
+              <li><a href="dashboard.php" data-after="Dashboard">Dashboard</a></li>
+              <?php
+            }
+            ?>
             <li><a href="#" onclick="gotoHome()">Home</a></li>
             <li><a href="#" onclick="gotoAboutUs()">About Us</a></li>
             <li><a href="news.html" target="_blank">News</a></li>
             <li><a href="#" onclick="gotoContactUs()">Contact Us</a></li>
             <li><a href="products.html" target="_blank">Products</a></li>
-
             <li><a href="login.html" target="_blank">Log In</a></li>
+            <?php
+            if(!isset($_SESSION['role'])){
+              ?>
+              <li><a href="login.php" data-after="Contact">Log In</a></li>
+              <?php
+            }
+            ?>
+             <?php
+            if(isset($_SESSION['role'])){
+            ?>
+              <li><a href="../loginRegister/logout.php" data-after="Contact">Log Out</a></li>
+            <?php
+            }
+            ?>
+            <?php
+
+            if(isset($_SESSION['user']) && $_SESSION['user'] = 'loggedIn'){ 
+            ?>
+            <li><a href="book.php" data-after="Contact">Book now</a></li>
+            <?php
+            }
+            ?>
+
         </ul>
     </header>
 

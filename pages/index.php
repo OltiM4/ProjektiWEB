@@ -4,18 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OMEK</title>
-    <link rel="icon" href="logoOmek.png" type="images/png">
-    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="../foto/logoOmek.png" type="images/png">
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Gill+Sans:wght@400;700&display=swap">
 
 
 </head>
 <body>
     
+
+
     <header>
         <div class="headeri">
             <a href="index.html">
-            <img src="logoOmek.png" alt="file:///C:/desktop/ProjektiWEB/index.html#">
+            <img src="../foto/logoOmek.png" alt="file:///C:/desktop/ProjektiWEB/index.html#">
         </a>
         </div>
         <ul>
@@ -80,21 +82,21 @@
         </div>
         <div class="wrapper">
             <div class="buy-button">
-                <a href="buy.html" class="cta">BUY NOW</a>
+                <a href="#####" class="cta">BUY NOW</a>
             </div>
     <div class="slider-frame">
         <div class="slide-images">
                 <div class="img-container">
-                    <img src="banner4.jpg">
+                    <img src="../foto/banner4.jpg">
                 </div>
                 <div class="img-container">
-                    <img src="fotobanner.jpg">
+                    <img src="../foto/fotobanner.jpg">
                 </div>
                 <div class="img-container">
-                    <img src="banner2.jpg">
+                    <img src="../foto/banner2.jpg">
                 </div>
                 <div class="img-container">
-                    <img src="banner3.jpg">
+                    <img src="../foto/banner3.jpg">
                 </div>
                 
         </div>
@@ -111,7 +113,6 @@
         </button>
         </div>   
            <main>
-                <p></p>
             </div>
             <div class="foto">
         </div>
@@ -120,6 +121,7 @@
      <div class="maincontainer2">
         <div class="aboutus" id="aboutus">
             <div class="fototekst"> 
+            <img src="../foto/banner3.jpg">
                 <h1>Our Story</h1>
             </div>
             </div>
@@ -213,9 +215,9 @@
                         <ul>
                             <dl type = "circle">
                                 <li><a href="file:///C:/Users/HP/Desktop/ProjektiWEB-master/products.html"><h4>Online shop</h4></a></li>
-                            <li><a href="#">Jackets</a></li>
-                            <li><a href="#">Watch</a></li>
-                            <li><a href="#">Shoes</a></li>
+                            <li><a href="">Jackets</a></li>
+                            <li><a href="">Watch</a></li>
+                            <li><a href="">Shoes</a></li>
                             <li><a href="#">Parfume</a></li>
                             </dl>
                         </ul>
@@ -223,10 +225,10 @@
                     <div class="footer-col">
                         <h4>Follow us</h4>
                         <div class="social-links">
-                            <a href=""><img src="facebook.png" alt=""></a>
-                            <a href=""><img src="twitter.png" alt=""></a>
-                            <a href=""><img src="instagram.png" alt=""></a>
-                            <a href=""><img src="pinterest.png" alt=""></a>
+                            <a href=""><img src="../foto/facebook.png" alt=""></a>
+                            <a href=""><img src="../foto/twitter.png" alt=""></a>
+                            <a href=""><img src="../foto/instagram.png" alt=""></a>
+                            <a href=""><img src="../foto/pinterest.png" alt=""></a>
                         </div>
                     </div>
                 </div>
