@@ -1,0 +1,115 @@
+/* Reset some default browser styles */
+body, h1, h2, p, input, select, textarea {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Global Styles */
+  body {
+    background-color: #f5f5f5;
+    color: #333;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Header Styles */
+  header {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  /* Heading Section Styles */
+  .heading {
+    background: url('../img/header-bg-3.png') no-repeat center center;
+    background-size: cover;
+    text-align: center;
+    padding: 2rem 0;
+    color: #fff;
+  }
+  
+  .heading h1 {
+    font-size: 2.5rem;
+  }
+  
+  /* Form Section Styles */
+  .form {
+    padding: 3rem 0;
+  }
+  
+  .form-form {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .flex {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .inputBox {
+    flex: 1 1 calc(50% - 20px);
+    margin: 10px;
+  }
+  
+  span {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .date {
+    width: calc(50% - 12px);
+  }
+  
+  .btn {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Footer Styles */
+  footer {
+    background-color: #34495e;
+    color: #ecf0f1;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .inputBox {
+      flex: 1 1 100%;
+    }
+  
+    .date {
+      width: 100%;
+    }
+  }
+  

@@ -380,10 +380,12 @@ h1{
     text-decoration: none; 
     border-radius: 5px; 
     transition: background-color 0.3s ease; 
+text-align: center;
 }
 .buy-button a {
     color: white; 
     text-decoration: none; 
+    text-align: center;
 }
 .buy-button:hover {
     background-color: #000000; /
