@@ -1,19 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="buy.css">
+  <link rel="stylesheet" href="../css/buy.css">
   <link rel="icon" href="../img/logo.png" type="image/png">
-  <title>Book</title>
+  <title>BUY</title>
 </head>
 
 
 <body>
    
 <!-- header section starts  -->
-    <?php include '../include/header.php'; ?>
+    <?php include '../include/footer.php'; ?>
   <!-- End Header -->
 
 <div class="heading" style="background:url(../img/header-bg-3.png) no-repeat">
@@ -28,17 +27,15 @@
    <?php
             require_once '../bookingsMapper.php';
             require_once '../bookingsconfig/bookings.php';
-            if (isset($_POST['bookNow'])) {
+            if (isset($_POST['buyNow'])) {
                 $name = $_POST['name'];
-                $email = $_POST['email'];
+                $lastName = $_POST['lastName'];
                 $phone = $_POST['phone'];
-                $address = $_POST['check_out_date'];
-                $destination = $_POST['destination'];
-                $guestNumber = $_POST['guestNumber'];
-                $check_in_date = $_POST['check_in_date'];
-                $check_out_date = $_POST['check_out_date'];
-                $booking = new Bookings(
-                  $name, $email, $phone,$address,$destination,$guestNumber,$check_in_date,$check_out_date
+                $address = $_POST['address'];
+                $email = $_POST['email'];
+                $pairNumber = $_POST['pairNumber'];
+                $buynow = new BuyNow(
+                  $name,$lastName, $phone,$address,$email,$pairNumber
                 );
                 $mapper = new BookingsMapper();
                 $mapper->insertBooking($booking);
@@ -49,36 +46,28 @@
 
       <div class="flex">
          <div class="inputBox">
-            <span>name :</span>
+            <span>First name :</span>
             <input type="text" placeholder="enter your name" id="name" name="name" required>
          </div>
          <div class="inputBox">
-            <span>email :</span>
-            <input type="email" placeholder="enter your email" id="email" name="email" required>
+            <span>Last name :</span>
+            <input type="text" placeholder="enter your last name" id="lastname" name="lastname" required>
          </div>
          <div class="inputBox">
-            <span>phone :</span>
+            <span>Phone :</span>
             <input type="text" placeholder="enter your number" id="phone" name="phone" required>
          </div>
          <div class="inputBox">
-            <span>address :</span>
+            <span>Address :</span>
             <input type="text" placeholder="enter your address" id="alphanum" name="address" required>
          </div>
          <div class="inputBox">
-            <span>where to :</span>
-            <input type="text" placeholder="place you want to visit" id="text" name="destination" required>
+            <span>Email :</span>
+            <input type="email" placeholder="enter your email" id="email" name="email" required>
          </div>
          <div class="inputBox">
-            <span>how many :</span>
-            <input type="number" placeholder="number of guests" id="num" name="guestNumber" required>
-         </div>
-         <div class="inputBox">
-            <span>arrivals :</span>
-            <input type="date" class="date" name="check_in_date" required>
-         </div>
-         <div class="inputBox">
-            <span>leaving :</span>
-            <input type="date" class="date" name="check_out_date" required>
+            <span>How many :</span>
+            <input type="number" placeholder="number of pairs" id="num" name="ClothingNumber" required>
          </div>
       </div>
 
@@ -101,4 +90,3 @@
 
 </body>
 </html>
-

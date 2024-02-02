@@ -82,7 +82,7 @@
         </div>
         <div class="wrapper">
             <div class="buy-button">
-                <a href="#####" class="cta">BUY NOW</a>
+                <a href="../pages/products.php" class="cta">BUY NOW</a>
             </div>
     <div class="slider-frame">
         <div class="slide-images">
