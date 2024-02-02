@@ -23,11 +23,11 @@
         <ul>
             <li><a href="#" onclick="gotoHome()">Home</a></li>
             <li><a href="#" onclick="gotoAboutUs()">About Us</a></li>
-            <li><a href="news.html" target="_blank">News</a></li>
+            <li><a href="../pages/news.php" target="_blank">News</a></li>
             <li><a href="#" onclick="gotoContactUs()">Contact Us</a></li>
-            <li><a href="products.html" target="_blank">Products</a></li>
+            <li><a href="../pages/products.php" target="_blank">Products</a></li>
 
-            <li><a href="login.html" target="_blank">Log In</a></li>
+            <li><a href="../pages/login.php" target="_blank">Log In</a></li>
         </ul>
     </header>
 
