@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../css/buy.css">
-  <link rel="icon" href="../img/logo.png" type="image/png">
+  <link rel="icon" href="../foto/logoOmek.png" type="image/png">
   <title>BUY</title>
 </head>
 
@@ -25,8 +25,8 @@
 
    <h1 class="heading-title">BEST PRICES !</h1>
    <?php
-            require_once '../bookingsMapper.php';
-            require_once '../bookingsconfig/bookings.php';
+            require_once '../BuyNowMapper.php';
+            require_once '../buynowconfig/buynow.php';
             if (isset($_POST['buyNow'])) {
                 $name = $_POST['name'];
                 $lastName = $_POST['lastName'];
@@ -37,8 +37,8 @@
                 $buynow = new BuyNow(
                   $name,$lastName, $phone,$address,$email,$pairNumber
                 );
-                $mapper = new BookingsMapper();
-                $mapper->insertBooking($booking);
+                $mapper = new BuyNowsMapper();
+                $mapper->insertBuyNow($buynow);
             }
 
             ?>

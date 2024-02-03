@@ -81,7 +81,7 @@
 
 
         </div>
-        <div class="wrapper">
+        <div class="wrapper" id="home">
             <div class="buy-button">
                 <a href="../pages/products.php" class="cta">BUY NOW</a>
             </div>
@@ -224,8 +224,9 @@
                         </ul>
                     </div>
                     <div class="footer-col">
-                        <h4>Follow us</h4>
                         <div class="social-links">
+                        <h4>Follow us</h4>
+
                             <a href=""><img src="../foto/facebook.png" alt=""></a>
                             <a href=""><img src="../foto/twitter.png" alt=""></a>
                             <a href=""><img src="../foto/instagram.png" alt=""></a>

@@ -26,8 +26,8 @@
 
    <h1 class="heading-title">BEST PRICES !</h1>
    <?php
-            require_once '../BuyNowMapper.php';
-            require_once '../buyconfig/buy.php';
+            require_once '../ProjektiWEB/BuyNowMapper.php';
+            require_once '../ProjektiWEB/buynowconfig/buynow.php';
             if (isset($_POST['BuyNow'])) {
                $name = $_POST['name'];
                $lastname = $_POST['lastname'];

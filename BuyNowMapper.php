@@ -1,5 +1,5 @@
 <?php
-require_once '../ProjektiWEB/databaseConfig.php';
+require_once 'databaseConfig.php';
 
 class BuyNowMapper extends Database
 {
