@@ -32,47 +32,7 @@
     </header>
 
 <div class="background"></div>
-        <style>
-            button {
-                font-size: 18px;
-                color: #222;
-                font-family: inherit;
-                font-weight: 800;
-                cursor: pointer;
-                position: relative;
-                border: none;
-                background: none;
-                text-transform: uppercase;
-                transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
-                transition-duration: 400ms;
-                transition-property: color;
-            }
-    
-            button:focus,
-            button:hover {
-                color: #222;
-            }
-    
-            button:focus:after,
-            button:hover:after {
-                width: 100%;
-                left: 0%;
-            }
-    
-            button:after {
-                content: "";
-                pointer-events: none;
-                bottom: -2px;
-                left: 50%;
-                position: absolute;
-                width: 0%;
-                height: 2px;
-                background-color: black;
-                transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
-                transition-duration: 400ms;
-                transition-property: width, left;
-            }
-        </style>
+
     </head>
     <body>
         <button>
@@ -103,7 +63,8 @@
         </div>
     </div>
         </div>
-    
+
+        <div class="space"></div>
     <div class="storyline">
         <button>
     <p>Dive into the universe of OMEK, an Albanian fashion brand ignited by the vivid pulse of youth culture,
@@ -118,7 +79,7 @@
             <div class="foto">
         </div>
      </div>
-
+     <div class="space"></div>
      <div class="maincontainer2">
         <div class="aboutus" id="aboutus">
             <div class="fototekst"> 
@@ -185,7 +146,6 @@
 
     </main>
 
-    <div class="space3"></div>
     <footer class="footer">
             <div class="contactus" id="contactus">
                 <div class="row">
@@ -270,6 +230,3 @@
 
 
     </script>
-      
-
-      

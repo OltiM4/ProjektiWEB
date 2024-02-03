@@ -91,7 +91,7 @@
             <label for="email">Email:</label>
             <input type="email" id="email" name="email">
 
-            <label for="newUsername">Username:</label>
+            <label for="newUsername">Phone:</label>
             <input type="text" id="newUsername" name="newUsername">
 
             <label for="newPassword">Password:</label>
