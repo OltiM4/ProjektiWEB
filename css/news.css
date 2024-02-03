@@ -42,10 +42,14 @@ nav a.active {
 }
 
 .news-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     padding: 20px;
 }
 
 article {
+    flex-basis: calc(33.33% - 20px);
     margin-bottom: 30px;
 }
 .titull {
@@ -67,6 +71,16 @@ article {
 img {
     max-width: 100%;
     height: auto;
+}
+
+@media only screen and (max-width: 768px) {
+    .news-content {
+        flex-direction: column;
+    }
+
+    article {
+        flex-basis: 100%; 
+    }
 }
 
 footer {

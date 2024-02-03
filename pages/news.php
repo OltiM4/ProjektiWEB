@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/news.css">
-    <link rel="icon" href="../foto/logoOmek.png" type="image/png">
-
+    <link rel="icon" href="../foto/logoOmek.png" type="image/png"> 
     <title>News</title>
 </head>
 <body>
@@ -20,10 +19,10 @@
     <section class="news-content">
         <article>
             <h2 class="titull">Feature Story: The OMEK Experience</h2>
-            <p class="paragraf">
+            <div class="paragraf">
                 In a thrilling revelation, OMEK, your go-to destination for cutting-edge fashion, is set to redefine the industry. 
                 Prepare to be captivated as the brand introduces a fresh wave of style that seamlessly blends innovation and elegance.
-                 Stay tuned for a fashion revolution that promises to leave an indelible mark on your wardrobe.</p>
+                 Stay tuned for a fashion revolution that promises to leave an indelible mark on your wardrobe.</div>
         </article>
 
         <article>
