@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - OMEK</title>
     <link rel="stylesheet" href="style.css"> 
+    <link rel="icon" href="../foto/logoOmek.png" type="image/png">
+
     <style>
         body {
             background-color: #f5f5f5;
@@ -89,7 +91,7 @@
 
             <button type="submit">Login</button>
 
-            <p>Don't have an account? <a href="signup.html">Sign up here</a></p>
+            <p>Don't have an account? <a href="signup.php">Sign up here</a></p>
         </form>
 
      
