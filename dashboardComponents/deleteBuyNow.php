@@ -1,12 +1,11 @@
-<?php 
-    include '../bookingsMapper.php';
-    $mapper = new BookingsMapper();
-    $id = $_REQUEST['booking_ID'];
-    $delete = $mapper->deleteBooking($id);
- 
+<?php
+    include '../BuyNowMapper.php';
+    $mapper = new BuyNowsMapper();
+    $id = $_REQUEST['buynow_ID'];
+    $delete = $mapper->deleteBuyNow($id);
+
     if ($delete) {
-        header("Location:bookingsDashboard.php");
-        echo "<script>alert('Booking deleted successfully');</script>";
+        header("Location:buynowDashboard.php");
+        echo "<script>alert('Purchase deleted successfully');</script>";
     }
- ?>
- 
+?>

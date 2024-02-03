@@ -24,7 +24,7 @@
         <ul>
             <li> <a href="../pages/dashboard.php" ><i class="fa fa-home"></i> Dashboard</a></li>
             <li><a href="usersDashboard.php"  ><i class="fa fa-users"></i> Users</a></li>
-            <li><a href="bookingsDashboard.php" ><i class="fa fa-calendar"></i> Bookings</a></li>
+            <li><a href="buynowDashboard.php" ><i class="fa fa-calendar"></i> Purchases</a></li>
             <li><a href="../pages/index.php" ><i class="fa fa-home"></i>Home</a></li>
         </ul>
     </div>
@@ -56,20 +56,17 @@
                 <thead>
                     <tr>
                         <th class="heads">ID</th>
-                        <th class="heads"> Name</th>
+                        <th class="heads">Name</th>
                         <th class="heads">Last Name</th>
-                        <th class="heads">City</th>
-                        <th class="heads">Country</th>
-                        <th class="heads">Phone</th>
-                        <th class="heads">Username</th>
                         <th class="heads">Email</th>
+                        <th class="heads">Username</th>
                         <th class="heads">Role</th>
                         <th class="heads">Actions</th>
                     </tr>
                 </thead>
                 <tbody>
                     <?php
-                        require_once '../userMapper.php';
+                        require_once '../UserMapper.php';
                     $model = new UserMapper();
                     $rows = $model->getAllUsers();
                     foreach ($rows as $row) {
@@ -84,23 +81,13 @@
                             <td class="rows">
                                 <?php echo $row['lastname']; ?>
                             </td>
-                            
                             <td class="rows">
-                                <?php echo $row['city'] ?>
-                            </td>
-                            <td class="rows">
-                                <?php echo $row['country']; ?>
-                            </td>
-                            <td class="rows">
-                                <?php echo $row['phone']; ?>
-                            </td>
-                            
+                                <?php echo $row['email']; ?>
+                            </td>   
                             <td class="rows">
                                 <?php echo $row['username'] ?>
                             </td>
-                            <td class="rows">
-                                <?php echo $row['email']; ?>
-                            </td>
+                           
                             <td class="rows">
                                 <?php echo $row['role']; ?>
                             </td>

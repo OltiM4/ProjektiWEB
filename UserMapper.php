@@ -1,5 +1,5 @@
 <?php
-require_once '../ProjektiWEB/databaseConfig.php';
+require_once 'databaseConfig.php';
 class UserMapper extends Database
 {
 
@@ -48,15 +48,13 @@ class UserMapper extends Database
     {
         $firstname = $user->getFirstname();
         $lastname = $user->getLastName();
-        $city = $user->getCity();
-        $country = $user->getCountry();
-        $phone = $user->getPhone();//
-        $username= $user->getUsername();
+        $email = $user->getEmail();
+        $username = $user->getUsername();//
         $email = $user->getEmail();
         $password = hash("sha512",$user->getPassword()); 
         $role = $user->getRole();
-        $query = "INSERT INTO user(firstname, lastname,city,country,phone,username,email, password, role)
-         VALUES ('$firstname','$lastname', '$city','$country','$phone','$username', '$email', '$password','$role')";
+        $query = "INSERT INTO user(firstname, lastname,email,username, password, role)
+         VALUES ('$firstname','$lastname','$email','$username','$password','$role')";
         if ($sql = $this->conn->query($query)) {
             $_SESSION['message']= "Admin/User added succesfully";
             echo "<script>alert('records added successfully');</script>";
@@ -89,16 +87,13 @@ class UserMapper extends Database
         $userid = $data['userid'];
         $firstname = $data['firstname'];
         $lastname = $data['lastname'];
-        $city = $data['city'];
-        $country = $data['country'];
-        $phone = $data['phone'];
-        $username = $data['username'];
         $email = $data['email'];
+        $username = $data['username'];
         $password = $data['password'];
         $role = $data['role'];
 
-        $query = "update user set firstname='$firstname', lastname='$lastname', city='$city',country='$country', phone='$phone'
-        ,username='$username',email='$email', password='$password',role='$role' where userid='$userid'";
+        $query = "update user set firstname='$firstname', lastname='$lastname', email='$email'
+        ,username='$username', password='$password',role='$role' where userid='$userid'";
 
 
         if ($sql = $this->conn->query($query)) {

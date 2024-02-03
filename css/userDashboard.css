@@ -1,0 +1,261 @@
+
+/* Styles for the main container */
+.overview {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    font-size: 30px;
+  }
+  
+  .title i {
+    font-size: 40px;
+    margin-right: 10px;
+  }
+  
+  /* Styles for the table */
+  .styled-table {
+    border-collapse: collapse;
+    margin-top: 30px;
+    width: 100%;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+  }
+  
+  .styled-table th,
+  .styled-table td {
+    padding: 12px 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+  }
+  
+  .styled-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+  
+  .styled-table td {
+    font-size: 14px;
+  }
+  
+  .styled-table td.rows {
+    text-align: left;
+  }
+  
+  /* Styles for the button */
+  .submitAdd {
+    display: inline-block;
+    background-color: purple;
+    color: #fff;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .submitAdd:hover {
+    background-color: rgb(218, 164, 218);
+  }
+  
+  /* Styles for the overlay */
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+  }
+  
+  .overlay .wrapper {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 5px;
+    width: 500px;
+    max-width: 100%;
+    text-align: center;
+  }
+  
+  .overlay h2 {
+    margin-bottom: 20px;
+  }
+  
+  .overlay .content {
+    text-align: left;
+  }
+
+
+
+
+
+  /* addBookings code */
+
+  .containerr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .book-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 50px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    width: 600px;
+  }
+  
+  .flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .inputBox {
+    width: calc(50% - 10px);
+    position: relative;
+  }
+  
+  /* .inputBox span {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    font-size: 14px;
+    color: #333;
+    pointer-events: none;
+    transition: 0.2s ease-out;
+  }  */
+  
+  .inputBox input {
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .inputBox input:focus + span,
+  .inputBox input:not(:placeholder-shown) + span {
+    font-size: 12px;
+    top: 0;
+    transform: translateY(-50%);
+    color: #00bfa5;
+  }
+  
+  .inputBox input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #00bfa5;
+    border: none;
+    border-radius: 4px;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: 0.2s ease-out;
+  }
+  
+  .inputBox input[type="submit"]:hover {
+    background-color: #008e76;
+  }
+
+  /* addUser code */
+
+  .containerr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+.reg-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 50px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    width: 600px;
+  }
+  
+  .reg-form .flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .reg-form .inputBox {
+    width: calc(50% - 10px);
+    position: relative;
+  }
+  
+  .reg-form .inputBox input {
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .reg-form .inputBox input:focus {
+    outline: none;
+    border-bottom: 2px solid #555;
+  }
+  
+  /* .reg-form .inputBox span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 16px;
+    color: #555;
+    transition: all 0.3s ease;
+  } */
+  
+  .reg-form .inputBox input:focus + span,
+  .reg-form .inputBox input:valid + span {
+    top: -20px;
+    left: 0;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .inputBox input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #00bfa5;
+    border: none;
+    border-radius: 4px;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: 0.2s ease-out;
+  }
+  
+  .inputBox input[type="submit"]:hover {
+    background-color: #008e76;
+  }

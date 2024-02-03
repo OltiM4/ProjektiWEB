@@ -24,7 +24,7 @@
         <ul>
             <li> <a href="../pages/dashboard.php"><i class="fa fa-home"></i> Dashboard</a></li>
             <li><a href="usersDashboard.php"><i class="fa fa-users"></i> Users</a></li>
-            <li><a href="bookingsDashboard.php"><i class="fa fa-calendar"></i> Bookings</a></li>
+            <li><a href="buynowDashboard.php"><i class="fa fa-calendar"></i> Bookings</a></li>
             <li><a href="../pages/index.php"><i class="fa fa-home"></i>Home</a></li>
         </ul>
     </div>
@@ -33,7 +33,7 @@
 
         <div class="containerr">
             <?php
-            require_once '../userMapper.php';
+            require_once '../UserMapper.php';
             require_once '../userconfig/simpleUser.php';
             require_once '../userconfig/adminUser.php';
 
@@ -42,45 +42,36 @@
             if (isset($_POST['submit'])) {
                 $firstname = $_POST['firstname'];
                 $lastname = $_POST['lastname'];
-                $city = $_POST['city'];
-                $country = $_POST['country'];
-                $phone = $_POST['phone'];
-                $username = $_POST['username'];
                 $email = $_POST['email'];
+                $username = $_POST['username'];
                 $password = $_POST['password'];
                 $role = $_POST['role'];
                 if ($role == 1) {
                     $user = new AdminUser(
                         $firstname,
                         $lastname,
-                        $city,
-                        $country,
-                        $phone,
-                        $username,
                         $email,
+                        $username,
                         $password,
                         $role
                     );
                     $user->setSession();
                     $mapper = new UserMapper();
                     $mapper->insertUser($user);
-                    header('Location: usersDashboard.php#');
+                    header('Locatio: usersDashboardphp');
                 } else {
                     $user = new SimpleUser(
                         $firstname,
                         $lastname,
-                        $city,
-                        $country,
-                        $phone,
-                        $username,
                         $email,
+                        $username,
                         $password,
                         $role
                     );
                     $user->setSession();
                     $mapper = new UserMapper();
                     $mapper->insertUser($user);
-                    header('Location: usersDashboard.php#');
+                    header('Location: usersDashboard.php');
                 }
 
 
@@ -99,25 +90,14 @@
                         <input type="text" placeholder="enter your last name" id="lname" name="lastname">
                     </div>
                     <div class="inputBox">
-                        <span>City :</span>
-                        <input type="text" placeholder="enter your city" id="city" name="city">
-                    </div>
-                    <div class="inputBox">
-                        <span>Country :</span>
-                        <input type="text" placeholder="enter your country" id="country" name="country">
-                    </div>
-                    <div class="inputBox">
-                        <span>Phone :</span>
-                        <input type="number" placeholder="enter your number" id="phone" name="phone">
+                        <span>Enter an email </span>
+                        <input type="email" placeholder="enter your email" id="email" name="email">
                     </div>
                     <div class="inputBox">
                         <span>Create a username :</span>
                         <input type="text" placeholder="enter your new username" id="username" name="username">
                     </div>
-                    <div class="inputBox">
-                        <span>Enter an email </span>
-                        <input type="email" placeholder="enter your email" id="email" name="email">
-                    </div>
+                  
                     <div class="inputBox">
                         <span>Enter an password</span>
                         <input type="password" placeholder="enter password" id="password" name="password">

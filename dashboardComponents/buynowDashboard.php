@@ -22,7 +22,7 @@
         <ul>
             <li> <a href="../pages/dashboard.php" ><i class="fa fa-home"></i> Dashboard</a></li>
             <li><a href="usersDashboard.php"  ><i class="fa fa-users"></i> Users</a></li>
-            <li><a href="bookingsDashboard.php" ><i class="fa fa-calendar"></i> Bookings</a></li>
+            <li><a href="buynowDashboard.php" ><i class="fa fa-calendar"></i> Bookings</a></li>
             <li><a href="../pages/index.php" ><i class="fa fa-home"></i>Home</a></li>
         </ul>
     </div>
@@ -39,11 +39,11 @@
 
     <div class="activity">
         <div class="boxx">
-            <a class="submitAdd" href="addBooking.php">Add new Booking</a>
+            <a class="submitAdd" href="addBuyNow.php">Add new Purchase</a>
         </div>
         <div class="overlay" id="divOne">
             <div class="wrapper">
-                <h2>Bookings adding form</h2>
+                <h2>Purchases adding form</h2>
                 <div class="content">
                    
                 </div>
@@ -55,34 +55,30 @@
                     <tr>
                         <th class="heads">ID</th>
                         <th class="heads">Name</th>
-                        <th class="heads">Email</th>
+                        <th class="heads">LastName</th>
                         <th class="heads">Phone</th>
                         <th class="heads">Address</th>
-                        <th class="heads">Destination</th>
-                        <th class="heads">Guest Number</th>
-                        <th class="heads">Check in date</th>
-                        <th class="heads">Check out date</th>
-                        <th class="heads">Actions</th>
+                        <th class="heads">Email</th>
+                        <th class="heads">Number of Pairs</th>
                     </tr>
                 </thead>
                 <tbody>
                     <?php
-                        require_once '../bookingsMapper.php';
-                    $model = new BookingsMapper();
-                    $rows = $model->getAllBookings();
+                        require_once '../BuyNowMapper.php';
+                    $model = new BuyNowsMapper();
+                    $rows = $model->getAllBuyNows();
                     foreach ($rows as $row) {
                         ?>
                         <tr>
                             <td class="rows">
-                                <?php echo $row['booking_ID'] ?>
+                                <?php echo $row['buynow_ID'] ?>
                             </td>
                             <td class="rows">
                                 <?php echo $row['name']; ?>
                             </td>
                             <td class="rows">
-                                <?php echo $row['email']; ?>
+                                <?php echo $row['lastname']; ?>
                             </td>
-                            
                             <td class="rows">
                                 <?php echo $row['phone'] ?>
                             </td>
@@ -90,23 +86,16 @@
                                 <?php echo $row['address']; ?>
                             </td>
                             <td class="rows">
-                                <?php echo $row['destination']; ?>
-                            </td>
-                            
-                            <td class="rows">
-                                <?php echo $row['guestNumber'] ?>
+                                <?php echo $row['email']; ?>
                             </td>
                             <td class="rows">
-                                <?php echo $row['check_In_date']; ?>
-                            </td>
-                            <td class="rows">
-                                <?php echo $row['check_out_date']; ?>
+                                <?php echo $row['numberPairs']; ?>
                             </td>
                             <td class="rows">
                                 &nbsp;<a
-                                    href="editBooking.php?booking_ID=<?php echo $row['booking_ID']; ?>"><i class="fas fa-edit"></i></a> &nbsp;&nbsp;
+                                    href="editBuyNow.php?booking_ID=<?php echo $row['buynow_ID']; ?>"><i class="fas fa-edit"></i></a> &nbsp;&nbsp;
                                 <a
-                                    href="deleteBooking.php?booking_ID=<?php echo $row['booking_ID']; ?>"><i
+                                    href="deleteBuyNow.php?booking_ID=<?php echo $row['buynow_ID']; ?>"><i
                                         class="fas fa-trash"></i></a>
                             </td>
                         </tr>

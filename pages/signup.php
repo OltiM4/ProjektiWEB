@@ -91,7 +91,7 @@
             <label for="email">Email:</label>
             <input type="email" id="email" name="email">
 
-            <label for="newUsername">Phone:</label>
+            <label for="newUsername">Username:</label>
             <input type="text" id="newUsername" name="newUsername">
 
             <label for="newPassword">Password:</label>
@@ -112,8 +112,8 @@
             var firstName = document.getElementById("firstName").value;
             var lastName = document.getElementById("lastName").value;
             var email = document.getElementById("email").value;
-            var newUsername = document.getElementById("newUsername").value;
-            var newPassword = document.getElementById("newPassword").value;
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
             var confirmPassword = document.getElementById("confirmPassword").value;
 
             if (firstName === "" || lastName === "" || email === "" || newUsername === "" || newPassword === "" || confirmPassword === "") {

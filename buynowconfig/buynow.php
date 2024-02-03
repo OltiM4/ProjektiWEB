@@ -4,16 +4,16 @@
 class BuyNow
 {
     protected $name;
-    protected $lastName;
+    protected $lastname;
     protected $phone;
     protected $address;
     protected $email;
     protected $numberPairs;
     
-    public function __construct($name,$lastName,$phone,$address, $email, $numberPairs)
+    public function __construct($name,$lastname,$phone,$address, $email, $numberPairs)
     {
         $this->name = $name;
-        $this->lastName = $lastName;
+        $this->lastname = $lastname;
         $this->phone = $phone;
         $this->address = $address;
         $this->email = $email;
@@ -31,7 +31,7 @@ class BuyNow
         return $this->name;
     }
     public function getBuyNowClientLastName(){
-        return $this->lastName;
+        return $this->lastname;
     }
     public function getBuyNowClientPhone(){
         return $this->phone;

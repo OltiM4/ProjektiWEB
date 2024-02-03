@@ -19,7 +19,7 @@
         <ul>
             <li> <a href="../pages/dashboard.php" ><i class="fa fa-home"></i> Dashboard</a></li>
             <li><a href="usersDashboard.php"  ><i class="fa fa-users"></i> Users</a></li>
-            <li><a href="bookingsDashboard.php" ><i class="fa fa-calendar"></i> Bookings</a></li>
+            <li><a href="buynowDashboard.php" ><i class="fa fa-calendar"></i> Purchases</a></li>
             <li><a href="../pages/index.php" ><i class="fa fa-home"></i>Home</a></li>
         </ul>
     </div>
@@ -56,19 +56,14 @@
                 if (isset($_POST['update'])) {
                     if (
                         isset($_POST['firstname']) && isset($_POST['lastname']) &&
-                        isset($_POST['city']) && isset($_POST['country']) &&
-                        isset($_POST['phone']) && isset($_POST['username']) &&
-                        isset($_POST['email']) && isset($_POST['password']) &&
-                        isset($_POST['role']) 
+                        isset($_POST['email']) && isset($_POST['username']) &&
+                        isset($_POST['password']) &&  isset($_POST['role']) 
                     ) {
                         $data['userid'] = $id;
                         $data['firstname'] = $_POST['firstname'];
                         $data['lastname'] = $_POST['lastname'];
-                        $data['city'] = $_POST['city'];
-                        $data['country'] = $_POST['country'];
-                        $data['phone'] = $_POST['phone'];
-                        $data['username'] = $_POST['username'];
                         $data['email'] = $_POST['email'];
+                        $data['username'] = $_POST['username'];
                         $data['password'] = $_POST['password'];
                         $data['role'] = $_POST['role'];
                         $update = $mapper->updateUser($data);
@@ -92,39 +87,27 @@
                     <div class="flex">
                         <div class="inputBox">
                             <span>First Name :</span>
-                            <input type="text" placeholder="enter your first name" id="fname" name="firstname" value="<?php echo $user['firstname']; ?>">
+                            <input type="text" placeholder="Enter your first name" id="fname" name="firstname" value="<?php echo $user['firstname']; ?>">
                         </div>
                         <div class="inputBox">
                             <span>Last Name :</span>
-                            <input type="text" placeholder="enter your last name" id="lname" name="lastname" value="<?php echo $user['lastname']; ?>">
-                        </div>
-                        <div class="inputBox">
-                            <span>City :</span>
-                            <input type="text" placeholder="enter your city" id="city" name="city" value="<?php echo $user['city']; ?>">
-                        </div>
-                        <div class="inputBox">
-                            <span>Country :</span>
-                            <input type="text" placeholder="enter your country" id="country" name="country" value="<?php echo $user['country']; ?>">
-                        </div>
-                        <div class="inputBox">
-                            <span>Phone :</span>
-                            <input type="number" placeholder="enter your number" id="phone" name="phone" value="<?php echo $user['phone']; ?>">
-                        </div>
-                        <div class="inputBox">
-                            <span>Create a username :</span>
-                            <input type="text" placeholder="enter your new username" id="username" name="username" value="<?php echo $user['username']; ?>">
+                            <input type="text" placeholder="Enter your last name" id="lname" name="lastname" value="<?php echo $user['lastname']; ?>">
                         </div>
                         <div class="inputBox">
                             <span>Enter an email </span>
-                            <input type="email" placeholder="enter your email" id="email" name="email"  value="<?php echo $user['email']; ?>">
+                            <input type="email" placeholder="Enter your email" id="email" name="email"  value="<?php echo $user['email']; ?>">
+                        </div>
+                        <div class="inputBox">
+                            <span>Create a username :</span>
+                            <input type="text" placeholder="Enter your new username" id="username" name="username" value="<?php echo $user['username']; ?>">
                         </div>
                         <div class="inputBox">
                             <span>Enter an password</span>
-                            <input type="password" placeholder="enter password" id="password" name="password" value="<?php echo $user['password']; ?>" >
+                            <input type="password" placeholder="Enter password" id="password" name="password" value="<?php echo $user['password']; ?>" >
                         </div>
                         <div class="inputBox">
                             <span>Role </span>
-                            <input type="text" placeholder="enter your new role" id="role" name="role"  value="<?php echo $user['role']; ?>">
+                            <input type="text" placeholder="Enter your new role" id="role" name="role"  value="<?php echo $user['role']; ?>">
                         </div>
 
                     </div>
