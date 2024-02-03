@@ -1,5 +1,5 @@
 <?php 
-    include '../userMapper.php';
+    include '../UserMapper.php';
     $model = new UserMapper();
     $id = $_REQUEST['userid'];
     $delete = $model->deleteUser($id);

@@ -51,16 +51,16 @@ class BuyNowMapper extends Database
 
     public function insertBuyNow($buynow)
     {
-        $name = $buynow->getNameClientName();
-        $lastName = $buynow->getLastNameClientName();
-        $phone = $buynow->getPhoneClientEmail();
+        $name = $buynow->getBuyNowClientName();
+        $lastname = $buynow->getBuyNowClientLastName();
+        $phone = $buynow->getBuyNowClientPhone();
         $address = $buynow->getClientAddress();
-        $email = $buynow->getBookingClientEmail();
-        $numberPairs = $buynow->getNumberPairsClientPairs();
+        $email = $buynow->getBuyNowClientEmail();
+        $numberPairs = $buynow->getBuyNowNumberPairs();
         
 
-        $query = "INSERT INTO buynows(name,lastName,phone,address,email,numberPairs) 
-        VALUES ('$name','$email','$address','$numberPairs')";
+        $query = "INSERT INTO buynows(name,lastname,phone,address,name,numberPairs)
+        VALUES ('$name','$lastname','$phone','$email','$address','$numberPairs')";
         if ($sql = $this->conn->query($query)) {
             echo "<script>alert('records added successfully');</script>";
         } else {
@@ -84,7 +84,7 @@ class BuyNowMapper extends Database
     
     public function updateBuyNow($data)
     {
-        $query = "UPDATE buynows SET name='$data[name]',lastName='$data[lastName]',phone='$data[phone]',address='$data[address]' email='$data[email]',numberPairs='$data[numberPairs]',  WHERE buynow_ID='$data[buynow_ID]'";
+        $query = "UPDATE buynows SET name='$data[name]',lastname='$data[lastname]',phone='$data[phone]',address='$data[address]' email='$data[email]',numberPairs='$data[numberPairs]',  WHERE buynow_ID='$data[buynow_ID]'";
  
         if ($sql = $this->conn->query($query)) {
             return true;

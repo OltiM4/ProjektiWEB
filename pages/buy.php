@@ -10,16 +10,12 @@
 
 
 <body>
-   
-<!-- header section starts  -->
-    <?php include '../include/footer.php'; ?>
-  <!-- End Header -->
+
 
 <div class="heading" style="background:url(../img/header-bg-3.png) no-repeat">
    <h1>BUY NOW</h1>
 </div>
 
-<!-- booking section starts  -->
 
 <section class="form">
 
@@ -27,17 +23,17 @@
    <?php
             require_once '../BuyNowMapper.php';
             require_once '../buynowconfig/buynow.php';
-            if (isset($_POST['buyNow'])) {
+            if (isset($_POST['buynow'])) {
                 $name = $_POST['name'];
-                $lastName = $_POST['lastName'];
+                $lastname = $_POST['lastname'];
                 $phone = $_POST['phone'];
                 $address = $_POST['address'];
                 $email = $_POST['email'];
-                $pairNumber = $_POST['pairNumber'];
+                $numberPairs = $_POST['numberPairs'];
                 $buynow = new BuyNow(
-                  $name,$lastName, $phone,$address,$email,$pairNumber
+                  $name,$lastname, $phone,$address,$email,$numberPairs
                 );
-                $mapper = new BuyNowsMapper();
+                $mapper = new BuyNowMapper();
                 $mapper->insertBuyNow($buynow);
             }
 
@@ -67,26 +63,17 @@
          </div>
          <div class="inputBox">
             <span>How many :</span>
-            <input type="number" placeholder="Number of pairs" id="num" name="ClothingNumber" required>
+            <input type="number" placeholder="Number of pairs" id="num" name="numberPairs" required>
          </div>
       </div>
 
-      <input type="submit" value="Submit" class="btn" name="bookNow" onclick="validateBook()">
+      <input type="submit" value="Submit" class="btn" name="buynow" onclick="validateBook()">
 
    </form>
 
 </section>
 
-<!-- booking section ends -->
-
-<!-- footer section starts  -->
-
-<?php include '../include/footer.php'; ?>
-
-<!-- footer section ends -->
-
-<!-- swiper js link  -->
-<script src="../javascript/app.js"></script>
+<script src="../js/app.js"></script>
 
 </body>
 </html>
