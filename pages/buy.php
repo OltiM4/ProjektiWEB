@@ -47,31 +47,31 @@
       <div class="flex">
          <div class="inputBox">
             <span>First name :</span>
-            <input type="text" placeholder="enter your name" id="name" name="name" required>
+            <input type="text" placeholder="Enter your name" id="name" name="name" required>
          </div>
          <div class="inputBox">
             <span>Last name :</span>
-            <input type="text" placeholder="enter your last name" id="lastname" name="lastname" required>
+            <input type="text" placeholder="Enter your last name" id="lastname" name="lastname" required>
          </div>
          <div class="inputBox">
             <span>Phone :</span>
-            <input type="text" placeholder="enter your number" id="phone" name="phone" required>
+            <input type="text" placeholder="Enter your number" id="phone" name="phone" required>
          </div>
          <div class="inputBox">
             <span>Address :</span>
-            <input type="text" placeholder="enter your address" id="alphanum" name="address" required>
+            <input type="text" placeholder="Enter your address" id="alphanum" name="address" required>
          </div>
          <div class="inputBox">
             <span>Email :</span>
-            <input type="email" placeholder="enter your email" id="email" name="email" required>
+            <input type="email" placeholder="Enter your email" id="email" name="email" required>
          </div>
          <div class="inputBox">
             <span>How many :</span>
-            <input type="number" placeholder="number of pairs" id="num" name="ClothingNumber" required>
+            <input type="number" placeholder="Number of pairs" id="num" name="ClothingNumber" required>
          </div>
       </div>
 
-      <input type="submit" value="submit" class="btn" name="bookNow" onclick="validateBook()">
+      <input type="submit" value="Submit" class="btn" name="bookNow" onclick="validateBook()">
 
    </form>
 
