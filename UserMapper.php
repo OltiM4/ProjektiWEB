@@ -1,5 +1,5 @@
 <?php
-require_once 'databaseConfig.php';
+require_once '../ProjektiWEB/databaseConfig.php';
 class UserMapper extends Database
 {
 
@@ -50,7 +50,6 @@ class UserMapper extends Database
         $lastname = $user->getLastName();
         $email = $user->getEmail();
         $username = $user->getUsername();//
-        $email = $user->getEmail();
         $password = hash("sha512",$user->getPassword()); 
         $role = $user->getRole();
         $query = "INSERT INTO user(firstname, lastname,email,username, password, role)

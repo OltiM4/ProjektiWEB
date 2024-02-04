@@ -20,7 +20,7 @@
         <ul>
             <li> <a href="dashboard.php" ><i class="fa fa-home"></i> Dashboard</a></li>
             <li><a href="../dashboardComponents/usersDashboard.php"  ><i class="fa fa-users"></i> Users</a></li>
-            <li><a href="../dashboardComponents/bookingsDashboard.php" ><i class="fa fa-calendar"></i> Bookings</a></li>
+            <li><a href="../dashboardComponents/buynowDashboard.php" ><i class="fa fa-calendar"></i>Purchases</a></li>
             <li><a href="index.php" ><i class="fa fa-home"></i>Home</a></li>
         </ul>
     </div>
@@ -127,23 +127,23 @@
                             <th>Name</th>
                         </tr>
                         <tr>
-                            <td><img src="../img/vesaa.jpg" alt=""></td>
+                            <td><img src="../foto/edi.jpg" alt=""></td>
                             <td>Edi updated</td>
                             <td><img src="info.png" alt=""></td>
                         </tr>
                         <tr>
-                            <td><img src="../img/dijanaa.jpg" alt=""></td>
-                            <td>Olti</td>
+                            <td><img src="../foto/olti.jpg" alt=""></td>
+                            <td>Olti updated</td>
                             <td><img src="info.png" alt=""></td>
                         </tr>
                         <tr>
-                            <td><img src="../img/dijanaa.jpg" alt=""></td>
+                            <td><img src="../foto/enis.jpg" alt=""></td>
                             <td>Enis updated	</td>
                             <td><img src="info.png" alt=""></td>
                         </tr>
                         <tr>
-                            <td><img src="../img/dijanaa.jpg" alt=""></td>
-                            <td>Rigon updated2	</td>
+                            <td><img src="../foto/olti.jpg" alt=""></td>
+                            <td>Olti updated2	</td>
                             <td><img src="info.png" alt=""></td>
                         </tr>
 

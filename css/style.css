@@ -816,3 +816,26 @@ h1{
     float: left;
 }
 
+.buy-button {
+    margin-left: 170px;
+    margin-top: 70px;
+    font-size: xx-large;
+    font-style: initial;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000000; 
+    color: #fefefe; 
+    text-decoration: none; 
+    border-radius: 5px; 
+    transition: background-color 0.3s ease; 
+text-align: center;
+}
+.buy-button a {
+    color: white; 
+    text-decoration: none; 
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.buy-button:hover {
+    background-color: #000000; /
+}
