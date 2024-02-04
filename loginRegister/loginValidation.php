@@ -60,7 +60,7 @@ class LoginLogic
             $user['username'],$user['password'],$user['confirmPassword'],1);
                 $adminUser->setSession();
             } else {
-                $simpleUser = new SimpleUser($user['firstName'],$user['lastName'], $user['email'],
+                $simpleUser = new SimpleUser($user['firstname'],$user['lastname'], $user['email'],
                 $user['username'],$user['password'],$user['confirmPassword'],0);
                 $simpleUser->setSession();
             }
@@ -106,14 +106,14 @@ class SignUpLogic
             $this->username,$this->password,$this->password,$this->confirmPassword,1);
             $mapper = new UserMapper();
             $mapper->insertUser($user);
-            header("Location: ../pages/signup.php"); //nese e lo login po me prishet regexi, nese e lo register logjikisht mas register duhet me t direktu ne login
+            header("Location: ../pages/login.php"); //nese e lo login po me prishet regexi, nese e lo register logjikisht mas register duhet me t direktu ne login
         }
         else{
             $user = new SimpleUser($this->firstname,$this->lastname,$this->email,
             $this->username,$this->password,$this->confirmPassword,0);
             $mapper = new UserMapper();
             $mapper->insertUser($user);
-            header("Location: ../pages/signup.php");
+            header("Location: ../pages/login.php");
         }
     }
 

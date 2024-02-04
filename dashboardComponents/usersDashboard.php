@@ -83,11 +83,10 @@
                             </td>
                             <td class="rows">
                                 <?php echo $row['email']; ?>
-                            </td>   
+                            </td>
                             <td class="rows">
                                 <?php echo $row['username'] ?>
                             </td>
-                           
                             <td class="rows">
                                 <?php echo $row['role']; ?>
                             </td>

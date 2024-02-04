@@ -22,7 +22,7 @@
         <ul>
             <li> <a href="../pages/dashboard.php" ><i class="fa fa-home"></i> Dashboard</a></li>
             <li><a href="usersDashboard.php"  ><i class="fa fa-users"></i> Users</a></li>
-            <li><a href="buynowDashboard.php" ><i class="fa fa-calendar"></i> Bookings</a></li>
+            <li><a href="buynowDashboard.php" ><i class="fa fa-calendar"></i>Purchases</a></li>
             <li><a href="../pages/index.php" ><i class="fa fa-home"></i>Home</a></li>
         </ul>
     </div>
@@ -32,7 +32,7 @@
     <div class="overview">
     <div class="title">
         <i class="fas fa-users-cog"></i>
-        <span class="text">Bookings</span>
+        <span class="text">Purchases</span>
     </div>
 
 

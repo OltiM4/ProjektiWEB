@@ -1,7 +1,7 @@
 <?php
 require_once 'databaseConfig.php';
 
-class BuyNowMapper extends Database
+class BuyNowsMapper extends Database
 {
 
     private $conn;
@@ -25,7 +25,7 @@ class BuyNowMapper extends Database
 
     }
 
-    public function getBuyNowByClientName($name)
+    public function getBuyNowsByClientName($name)
     {
         $data = null;
         $query = "SELECT * FROM  buynows WHERE name = '$name'";
@@ -37,7 +37,7 @@ class BuyNowMapper extends Database
         return $data;
     }
 
-    public function getAllBuyNow()
+    public function getAllBuysNow()
     {
         $data = null;
         $query = "SELECT * FROM buynows";
@@ -54,13 +54,13 @@ class BuyNowMapper extends Database
         $name = $buynow->getBuyNowClientName();
         $lastname = $buynow->getBuyNowClientLastName();
         $phone = $buynow->getBuyNowClientPhone();
-        $address = $buynow->getClientAddress();
+        $address = $buynow->getBuyNowClientAddress();
         $email = $buynow->getBuyNowClientEmail();
         $numberPairs = $buynow->getBuyNowNumberPairs();
         
 
-        $query = "INSERT INTO buynows(name,lastname,phone,address,name,numberPairs)
-        VALUES ('$name','$lastname','$phone','$email','$address','$numberPairs')";
+        $query = "INSERT INTO buynows(name,lastname,phone,address,email,numberPairs)
+        VALUES ('$name', '$lastname','$phone','$address','$email','$numberPairs')";
         if ($sql = $this->conn->query($query)) {
             echo "<script>alert('records added successfully');</script>";
         } else {
@@ -84,7 +84,7 @@ class BuyNowMapper extends Database
     
     public function updateBuyNow($data)
     {
-        $query = "UPDATE buynows SET name='$data[name]',lastname='$data[lastname]',phone='$data[phone]',address='$data[address]' email='$data[email]',numberPairs='$data[numberPairs]',  WHERE buynow_ID='$data[buynow_ID]'";
+        $query = "UPDATE buynows SET name='$data[name]',lastname='$data[lastname]',phone='$data[phone]',address='$data[address]',email='$data[email]',numberPairs='$data[numberPairs]'  WHERE buynow_ID='$data[buynow_ID]'";
  
         if ($sql = $this->conn->query($query)) {
             return true;

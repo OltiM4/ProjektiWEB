@@ -43,11 +43,11 @@
         $address = $_POST['address'];
         $email = $_POST['email'];
         $numberPairs = $_POST['numberPairs'];
-            $buynow = new Buynows(
+            $buynow = new BuyNow(
                 $name,$lastname, $phone,$address,$email,$numberPairs
             );
 
-            $mapper = new BuynowsMapper();
+            $mapper = new BuyNowsMapper();
             $mapper->insertBuyNow($buynow);
             header('Location:buynowDashboard.php');
         
